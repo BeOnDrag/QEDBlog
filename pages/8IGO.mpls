@@ -36,3 +36,70 @@ $$
 $$
 BC^2=AE\cdot EB\leq\left(\frac{AE+EB}{2}\right)^2=\left(\frac{AB}{2}\right)\implies2BC\leq AB.
 $$
+
+===
+
+P3.
+---
+凸四边形$ABCD$满足$AB=BC$且$\angle ABD=\angle BCD=90^\circ$。设其两对角线交于$E$，$F$在$AD$上，使得$\displaystyle{\frac{AF}{FD}=\frac{CE}{EA}}$。以$DF$为直径的圆$\omega$与三角形$ABF$的外接圆再交于$K$，
+与$EF$再交于$L$。求证$KL$平分$CE$。
+---
+---
+
+===
+
+P4.
+---
+不等边锐角三角形$ABC$的内心为$I$，外接圆为$\Gamma$。直线$AI$再交$\Gamma$于$M$。设$N$为$BC$中点，$T$在$\Gamma$上，使$IN\perp MT$。令$P$和$Q$分别为$I$对$AI$的垂线与$TB$和$TC$的交点。
+求证$PB=CQ$。
+---
+---
+
+===
+
+P5.
+---
+考虑凸五边形$ABCDE$和$CD$边上的一个动点$X$。设$K$和$L$在$AX$上，使$AB=BK$且$AE=EL$。三角形$CXK$与$DXL$的外接圆再交于$Y$。当$X$所有的$XY$要么过一定点，要么两两平行。
+---
+---
+
+## 高级组
+
+P1.
+---
+给定一个锐角三角形$ABC$与其外接圆$\omega$。设$D$为$AC$中点，$E$为$A$在$BC$上的投影，$F$为$AB$与$DE$的交点。$H$在$\omega$上的弧$BC$上（不包含$A$的一段），满足$\angle BHE=\angle ABC$。求证$\angle BHF=90^\circ$。
+---
+---
+
+===
+
+P2.
+---
+两个圆$\Gamma_1$与$\Gamma_2$交与两点$A$、$B$。过$A$的一条直线分别再交$\Gamma_1$与$\Gamma_2$于$C$和$D$。过$A$的$\Gamma_2$的切线再交$\Gamma_1$于$E$。设$F$在$\Gamma_2$上，使$F$和$A$在$BD$两侧，且$2\angle AFC=\angle ABC$。
+求证$F$对$\Gamma_2$的切线、$BD$与$CE$三线共点。
+---
+---
+
+===
+
+P3.
+---
+考虑三角形$ABC$与高线$AD$，$BE$，$CF$，和垂心$H$。$H$对$EF$的垂线分别交$EF$，$AB$，$AC$于$P$，$T$，$L$。$K$在$BC$上，使$BD=KC$。设$\omega$为过$H$和$P$且与$AH$相切。求证三角形$ATL$的外接圆与$\omega$相切，且切点位于直线$KH$上。
+---
+---
+
+===
+
+P4.
+---
+平面上的2021个点形成了某个凸2021边形的2021个顶点，且任意三点不共线，任意四点不共圆。求证存在其中的两个点，过它们的任意一圆的内部至少有除了这两点之外的673个点。
+---
+---
+
+===
+
+P5.
+---
+给定三角形$ABC$与其内心$I$。$\triangle ABC$的内切圆切BC于D。设点$P$与$Q$在边$BC$上，使$\angle PAB=\angle BCA$且$\angle QAC=\angle ABC$。设$K$与$L$分别为$\triangle ABP$与$\triangle ACQ$的内心。求证$AD$是$\triangle IKL$的欧拉线。
+---
+---

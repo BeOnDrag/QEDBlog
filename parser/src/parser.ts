@@ -85,7 +85,7 @@ function parseMPLS(content: string, config: Config) {
     let body = outdent`
         <div id="title">
             <h1>${list.title}</h1>
-            <a href="../../" id="home">
+            <a href="../" id="home">
                 <img src="../../static/logo.png"/>
             </a>
         </div>
