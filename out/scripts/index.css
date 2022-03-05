@@ -1,0 +1,129 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--body-color);
+    font-family: Georgia, "Times New Roman", Times, serif;
+    min-height: 100vh;
+}
+
+#home {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 100px;
+    align-items: center;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 60%;
+    border-width: 0px 1px 0px 1px;
+    border-style: solid;
+    flex: 1;
+}
+
+@media screen and (max-width: 700px) {
+    #main {
+        width: calc(100vw - 40px);
+    }
+}
+
+button.acc {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    width: 100%;
+    border: none;
+    text-align: left;
+    background-color: transparent;
+    cursor: pointer;
+    color: #000000;
+}
+
+p,
+h1,
+h3 {
+    color: #000000;
+}
+
+p {
+    font-size: var(--main-font-size);
+}
+
+h1 {
+    font-size: var(--h1-font-size);
+    margin: 15px;
+}
+
+h3 {
+    font-size: var(--h3-font-size);
+}
+
+div.txt,
+div.soltxt,
+h3 {
+    margin-left: var(--lst-indent);
+    font-size: var(--main-font-size);
+}
+
+button.acc + div {
+    display: none;
+    padding: 0px 0px 10px 0px;
+}
+
+button.acc.catbtn {
+    padding: 0px 10px;
+    font-size: var(--acc-cat-font-size);
+    transition: background-color 0.2s;
+    min-height: var(--acc-cat-height);
+    background-color: #88888822;
+}
+
+button.acc.catbtn:hover {
+    background-color: #88888844;
+}
+
+button.acc.catbtn.open {
+    background-image: linear-gradient(
+        90deg,
+        #88888844,
+        #88888844 60%,
+        #00000000
+    );
+}
+
+button.acc.sol {
+    min-height: var(--acc-sol-height);
+    font-size: var(--acc-sol-font-size);
+    transition: all 0.5s;
+    padding: 10px;
+}
+
+button.acc.sol:hover {
+    background-color: #000000;
+    color: var(--sol-hover-color);
+}
+
+button.acc.sol > div.hint {
+    display: inline;
+}
+
+button.acc.sol > div.hint > p {
+    color: transparent;
+    display: inline;
+    margin-left: 10px;
+    transition: all 0.5s;
+    font-size: var(--acc-sol-font-size);
+}
+
+button.acc.sol:hover > div.hint > p {
+    color: #ffffff;
+}
+
+button.acc.sol + div.soltxt > p {
+    font-size: var(--sol-font-size);
+}
