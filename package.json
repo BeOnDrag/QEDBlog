@@ -3,7 +3,11 @@
   "version": "0.0.0",
   "description": "A Math Problems Page Generator.",
   "main": ".eleventy.js",
-  "scripts": {},
+  "scripts": {
+      "prebuild": "tsc",
+      "build": "eleventy",
+      "update": "eleventy --incremental"
+  },
   "author": "",
   "license": "ISC",
   "devDependencies": {
