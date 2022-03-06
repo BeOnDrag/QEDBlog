@@ -21,16 +21,16 @@
         crossorigin="anonymous"
     ></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="../../scripts/index.js"></script>
-    <link rel="stylesheet" href="../../scripts/index.css" />
-    <link rel="stylesheet" href="../../scripts/config.css" />
+    <script src="../scripts/index.js"></script>
+    <link rel="stylesheet" href="../scripts/index.css" />
+    <link rel="stylesheet" href="../scripts/config.css" />
     <meta charset="UTF-8" />
 </head>
 <body>
 <div id="title">
     <h1>第八届伊朗几何奥林匹克</h1>
     <a href="../" id="home">
-        <img src="../../static/logo.png"/>
+        <img src="../static/logo.png"/>
     </a>
 </div>
 <div id="main"><div class="cat">
@@ -219,7 +219,20 @@ P4.
     </button>
     <div class="soltxt">
         <p>设这些点是$P_1,\ P_2,\dots,\ P_{2021}$。我们先证明两个引理。</p>
-<p><strong>引理 1</strong> <em>称一个三角形是 <strong>好的</strong> ，如果它的外接圆覆盖所有其他的点。则所有好三角形形成一个$P_1P_2\dots P_{2021}$的三角剖分。</em></p>
+<p><strong>引理1</strong> <em>称一个三角形是 <strong>好的</strong> ，如果它的外接圆覆盖所有其他的点。则所有好三角形形成一个$P_1P_2\dots P_{2021}$的三角剖分。</em></p>
+<p><em>证明</em> 注意到在此多边形的每一条边上我们可以选取一个到这条边的张角最小的点，与这条边构成一个好三角形。现从一个好三角形$P_iP_jP_k$开始，选取它的一条边，例如$P_iP_j$。注意到任意一个异于$P_k$的、与$P_k$在$P_iP_j$同侧的点都与$P_iP_j$张出一个比$\angle P_iP_kP_j$更大的角，
+而与$P_k$异侧的点$X$均满足$\angle P_iXP_j+\angle P_iP_kP_j&gt;180^\circ$。取这些$X$中使$\angle P_iXP_j$最小的一个，记作$P_l$，则$P_iP_jP_l$也是好三角形，因为</p>
+<ul>
+<li>所有与$P_l$在$P_iP_j$同侧的点$X$均满足$\angle P_iXP_j&gt;\angle P_iP_lP_j$。</li>
+<li>所有与$P_l$在$P_iP_j$异侧的点$Y$均满足$\angle P_iYP_j&gt;\angle P_iP_kP_j\implies\angle P_iYP_j+\angle P_iP_lP_j&gt;180^\circ$。</li>
+</ul>
+<p>重复此操作我们可以得到2021边形的一个三角剖分，记作$T$。注意此三角剖分中的任何一个三角形都唯一确定了这个三角剖分。如果有一个不属于$T$的好三角形，则以它为起点构造另一个三角剖分$T'$。选定2021边形的一条边，
+注意到包含这条边的好三角形有且仅有一个，而$T$与$T'$均包含这条边。所以$T$与$T'$均包含同一个好三角形，这导出$T$与$T'$是同一个三角剖分，矛盾。</p>
+<p><strong>引理2</strong> <em>在上述$P_1P_2\dots P_{2021}$的三角剖分$T$中存在一条对角线，它的两边均至少有673个点。</em></p>
+<p><em>证明</em> 考虑正2021边形$Q_1Q_2\dots Q_{2021}$，并用与$T$中的边同样的下标画出$Q_i$之间的边。显然我们得到了$Q_1Q_2\dots Q_{2021}$的一个三角剖分$T'$。设$Q_1Q_2\dots Q_{2021}$的外心$O$位于某个三角形$Q_iQ_jQ_k$中，则此三角形必为锐角三角形。设其最长边为$Q_iQ_j$，
+则$\angle Q_iQ_kQ_j$是锐角，且至少有$60^\circ$，故$Q_iQ_j$的两侧均有至少673个点。</p>
+<p>回到$P_1P_2\dots P_{2021}$，则$P_iP_j$满足要求。</p>
+<p><strong>回到原题。</strong> 取引理2中的$P_iP_j$即满足题目要求，因为过$P_i$和$P_j$的任何一个圆必定覆盖$P_iP_j$某一侧的所有点。</p>
 
     </div>
 </div><div class="prb">

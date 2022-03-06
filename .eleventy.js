@@ -15,7 +15,7 @@ module.exports = (eleventyConfig) => {
     return {
         dir: {
             input: "pages",
-            output: "out/pages",
+            output: "out",
         },
     };
 };

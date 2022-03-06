@@ -81,7 +81,7 @@ function parseMPLS(content, config) {
         <div id="title">
             <h1>${list.title}</h1>
             <a href="../" id="home">
-                <img src="../../static/logo.png"/>
+                <img src="../static/logo.png"/>
             </a>
         </div>
         <div id="main">`.trim();
@@ -135,9 +135,9 @@ function parseMPLS(content, config) {
             crossorigin="anonymous"
         ></script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="../../scripts/index.js"></script>
-        <link rel="stylesheet" href="../../scripts/index.css" />
-        <link rel="stylesheet" href="../../scripts/config.css" />
+        <script src="../scripts/index.js"></script>
+        <link rel="stylesheet" href="../scripts/index.css" />
+        <link rel="stylesheet" href="../scripts/config.css" />
         <meta charset="UTF-8" />
     </head>
     <body>
