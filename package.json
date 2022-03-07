@@ -10,7 +10,7 @@
   "license": "CC-BY-SA-4.0",
   "devDependencies": {
     "@11ty/eleventy": "^1.0.0",
-    "mathpage": "^1.1.1",
+    "mathpage": "^1.1.5",
     "typescript": "^4.6.2"
   }
 }
