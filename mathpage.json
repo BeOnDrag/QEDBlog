@@ -1,5 +1,19 @@
 {
     "siteTitle": "QED.",
     "showSolutionStr": "展示答案。",
-    "newline": "\r\n"
+    "newline": "\r\n",
+
+    "css": {
+        "mainWidth": "70%",
+        "mainFontSize": "18px",
+        "h1FontSize": "40px",
+        "h3FontSize": "20px",
+        "accCatHeight": "60px",
+        "accCatFontSize": "25px",
+        "accSolHeight": "20px",
+        "accSolFontSize": "15px",
+        "lstIndent": "20px",
+        "bodyColor": "#faebd7",
+        "solHoverColor": "#ff9f46"
+    }
 }

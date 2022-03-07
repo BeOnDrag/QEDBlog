@@ -1,15 +1,11 @@
-const parser = require("./parser/out/parser");
+const parse = require("mathpage").parse;
 const fs = require("fs");
 
 module.exports = (eleventyConfig) => {
     eleventyConfig.addTemplateFormats("mpls");
 
     eleventyConfig.addExtension("mpls", {
-        compile: (content) => () =>
-            parser.parseMPLS(
-                content,
-                JSON.parse(fs.readFileSync("./mathpage.json").toString())
-            ),
+        compile: parse,
     });
 
     return {
