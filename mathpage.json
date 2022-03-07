@@ -1,4 +1,5 @@
 {
     "siteTitle": "QED.",
-    "showSolutionStr": "展示答案。"
+    "showSolutionStr": "展示答案。",
+    "newline": "\r\n"
 }

@@ -44,14 +44,28 @@ button.acc {
     color: #000000;
 }
 
-p,
-h1,
-h3 {
+div.desc {
+    color: #000000;
+    border-width: 1px 0px 1px 0px;
+    border-style: dashed;
+    border-color: #777777;
+    padding: 10px;
+}
+
+div.desc * {
+    font-size: var(--main-font-size);
+}
+
+div.txt *, h3, h1 {
     color: #000000;
 }
 
-p {
+div.txt * {
     font-size: var(--main-font-size);
+}
+
+div.soltxt * {
+    font-size: var(--acc-sol-font-size);
 }
 
 h1 {
@@ -63,11 +77,8 @@ h3 {
     font-size: var(--h3-font-size);
 }
 
-div.txt,
-div.soltxt,
-h3 {
+h3, div.txt, div.soltxt {
     margin-left: var(--lst-indent);
-    font-size: var(--main-font-size);
 }
 
 button.acc + div {
@@ -97,6 +108,7 @@ button.acc.catbtn.open {
 }
 
 button.acc.sol {
+    margin-left: 0px;
     min-height: var(--acc-sol-height);
     font-size: var(--acc-sol-font-size);
     transition: all 0.5s;
@@ -112,18 +124,13 @@ button.acc.sol > div.hint {
     display: inline;
 }
 
-button.acc.sol > div.hint > p {
+button.acc.sol > div.hint * {
     color: transparent;
     display: inline;
-    margin-left: 10px;
     transition: all 0.5s;
     font-size: var(--acc-sol-font-size);
 }
 
-button.acc.sol:hover > div.hint > p {
+button.acc.sol:hover > div.hint * {
     color: #ffffff;
-}
-
-button.acc.sol + div.soltxt > p {
-    font-size: var(--sol-font-size);
 }

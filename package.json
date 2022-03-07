@@ -2,9 +2,8 @@
   "name": "qedblog",
   "version": "0.0.0",
   "description": "A Math Problems Page Generator.",
-  "main": ".eleventy.js",
+  "main": "",
   "scripts": {
-    "prebuild": "tsc",
     "build": "eleventy",
     "update": "eleventy --incremental"
   },
